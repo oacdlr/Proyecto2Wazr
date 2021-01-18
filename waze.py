@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jan 17 15:47:24 2021
 
-@author: Ricardo Vargas
-"""
-
-   
 import itertools
 
 def rutas(ciudades,inicio,fin):
