@@ -1,0 +1,28 @@
+def rutaMayor(routes,opciones):
+    j=[]
+    m=[]
+    for i in range(len(opciones)):
+        m.append(suma(routes, opciones[i]))
+    mayor=max(m)
+    for i in range(len(m)):
+        if(m[i]>=mayor):
+            j.append(i)
+    print(f"\nEl mayor costo es: {mayor}\n")
+    print("En la(s) ruta(s): ")
+    for i in range(len(j)):
+        print({opciones[j[i]]})
+        
+def rutaMenor(routes,opciones):
+    j=[]
+    m=[]
+    for i in range(len(opciones)):
+        m.append(suma(routes, opciones[i]))
+    menor=min(m)
+    for i in range(len(m)):
+        if(m[i]<=menor):
+            j.append(i)
+    print(m)
+    print(f"\nEl menor costo es: {menor}\n")
+    print("En la(s) ruta(s): ")
+    for i in range(len(j)):
+        print({opciones[j[i]]})
