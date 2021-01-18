@@ -21,7 +21,6 @@ def rutaMenor(routes,opciones):
     for i in range(len(m)):
         if(m[i]<=menor):
             j.append(i)
-    print(m)
     print(f"\nEl menor costo es: {menor}\n")
     print("En la(s) ruta(s): ")
     for i in range(len(j)):
